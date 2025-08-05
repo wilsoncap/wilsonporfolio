@@ -13,7 +13,7 @@
             </div>
             <div class="flex flex-wrap items-center mb-4">
               <span v-for="tech in project.technologies" :key="tech"
-                    class="bg-primary/20 text-primary text-sm font-semibold px-3 py-1 rounded-full mr-2 mb-2">
+                    class="bg-primary/20 text-white text-sm font-semibold px-3 py-1 rounded-full mr-2 mb-2">
                 {{ tech }}
               </span>
             </div>
@@ -83,11 +83,11 @@ const projects = ref([
     technologies: ['React', 'Next.js', 'Tailwin', 'Typescript'],
     videoUrl: 'https://dashboard-items-git-main-wilson-s-projects.vercel.app/dashboard/pokemons',
     imageUrl: '/dashboard.png',
-    repo: 'https://github.com/wilsoncap/poke-proyect.git'
+    repo: 'https://github.com/wilsoncap/dashboard-items'
   },
   {
     id: 6,
-    title: 'dashboard',
+    title: 'Gestion Contable',
     description: 'Un sistema de gestión de contabilidad y recaudos multicompañia, está diseñado para ser multicompañía y con un sistema de roles que adapta dinámicamente los menús y accesos según el perfil de cada usuario, nota: repositorio privado',
     technologies: ['Laravel', 'Inertia', 'Postgres', 'Vue.js'],
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',

@@ -2,7 +2,8 @@
   <section id="contact" class="py-20 px-4 md:px-0 bg-card">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-bold text-primary mb-6">Contacto</h2>
-      <p class="text-lg mb-8">¿Interesado en colaborar? ¡Contáctame!</p>
+      <p class="text-2xl text-white mb-1">¿Tienes una idea en mente o un proyecto en marcha?</p>
+      <p class="font-semibold mb-8 text-white text-3xl">Hablemos y construyamos algo increíble juntos.</p>
       <div class="flex justify-center items-center space-x-6 mb-8">
         <a href="https://github.com/" target="_blank" class="hover:text-primary transition-colors">
           <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
