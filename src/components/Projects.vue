@@ -6,7 +6,28 @@
         <div v-for="project in projects" :key="project.id"
              class="bg-card rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
           <img :src="project.imageUrl" alt="Vista previa del proyecto" class="w-full h-48 object-cover">
-          <div class="p-6">
+          <div class="p-6 text-white">
+            <h3 class="text-2xl font-bold mb-2">{{ project.title }}</h3>
+            <p class="mb-4">{{ project.description }}</p>
+            <div class="flex flex-wrap items-center mb-4">
+              <span v-for="tech in project.technologies" :key="tech"
+                    class="bg-primary/20 text-primary text-sm font-semibold px-3 py-1 rounded-full mr-2 mb-2">
+                {{ tech }}
+              </span>
+            </div>
+            <a :href="project.videoUrl" target="_blank"
+               class="inline-block bg-primary hover:bg-primary/80 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+              Ver Demostración
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+        <div v-for="project in projects" :key="project.id"
+             class="bg-card rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+          <img :src="project.imageUrl" alt="Vista previa del proyecto" class="w-full h-48 object-cover">
+          <div class="p-6 text-white">
             <h3 class="text-2xl font-bold mb-2">{{ project.title }}</h3>
             <p class="mb-4">{{ project.description }}</p>
             <div class="flex flex-wrap items-center mb-4">
