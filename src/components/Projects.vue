@@ -1,11 +1,14 @@
 <template>
   <section id="projects" class="py-20 px-4 md:px-0">
-    <div class="max-w-6xl mx-auto text-center">
+    <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-4xl font-bold text-primary mb-12">Mis Proyectos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="project in projects" :key="project.id"
              class="bg-card rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-          <img :src="project.imageUrl" alt="Vista previa del proyecto" class="w-full h-48 object-cover">
+           <div class="w-full h-64 bg-left bg-cover" :style="{ backgroundImage: `url(${project.imageUrl})` }"></div>
+
+
+
           <div class="p-6 text-white">
             <h3 class="text-2xl font-bold mb-2">{{ project.title }}</h3>
             <div class="h-40">
@@ -42,9 +45,9 @@ import { ref } from 'vue';
 const projects = ref([
   {
     id: 1,
-    title: 'Quien es ese pokemon',
-    description: 'Un Juego donde el participante debe ver la siluta negra del pokemon y escribir el el nombre correcto del pokemon. donde en cada juego le va dando una puntuacion y un score',
-    technologies: ['React.js', 'Typescript', 'Tailwind CSS'],
+    title: '¿Quién es ese Pokémon?',
+    description: 'Un juego donde el participante debe ver la silueta negra del Pokémon y escribir el nombre correcto. En cada intento, se asigna una puntuación y un score acumulado.',
+    technologies: ['React.js', 'TypeScript', 'Tailwind CSS'],
     videoUrl: 'https://quien-es-ese-pokemon-wilson.netlify.app/',
     imageUrl: '/pokemon.png',
     repo: 'https://github.com/wilsoncap/poke-proyect.git'
@@ -52,47 +55,48 @@ const projects = ref([
   {
     id: 2,
     title: 'E-commerce de Guitarras',
-    description: 'Tienda de guitarras electricas donde simulamos la data de una base de datos en la pagina, pintamos la informacion y simulamos el carrito de compras con otras funcionalidades ',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Javascript'],
+    description: 'Tienda de guitarras eléctricas donde se simula la data desde una base de datos. Se pinta la información y se simula el carrito de compras, junto con otras funcionalidades.',
+    technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://jade-cascaron-a20bc0.netlify.app/',
     imageUrl: '/guitarra.png',
     repo: 'https://github.com/wilsoncap/poke-proyect.git'
   },
   {
     id: 3,
-    title: 'Cotizador Criptomonedas',
-    description: 'Sitio web donde se consume una api de criptomonendas y le vamos dando una cotizacion de el valor del mercado actual al usuario de esa criptomoneda',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Javascript'],
+    title: 'Cotizador de Criptomonedas',
+    description: 'Sitio web que consume una API de criptomonedas para mostrar al usuario la cotización actual de mercado de una moneda específica.',
+    technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://effulgent-brioche-74f5b1.netlify.app/',
     imageUrl: '/cripto.png',
     repo: 'https://github.com/wilsoncap/poke-proyect.git'
   },
   {
     id: 4,
-    title: 'Seguimeinto Veterinaria',
-    description: 'Sitio para llevar para llevar el control veterinario de los pacientes que ingresan por diferentes factores, trabajamos con persistencia de datos para simular el backend ',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Javascript'],
+    title: 'Seguimiento Veterinario',
+    description: 'Sitio para llevar el control de pacientes veterinarios ingresados por diferentes motivos. Se implementa persistencia de datos para simular el backend.',
+    technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://moonlit-biscotti-bbb077.netlify.app/',
     imageUrl: '/veterinaria.png',
     repo: 'https://github.com/wilsoncap/poke-proyect.git'
   },
   {
     id: 5,
-    title: 'Dasboard en Next.js',
-    description: 'Proyecto intermedio de Nextjs Con Typescript y Tailwind, donde hacemos consumos de apis, persistencia de datos, manejos de estados, carga de imagenes, menejo Server components, Entre otros ',
-    technologies: ['React', 'Next.js', 'Tailwin', 'Typescript'],
+    title: 'Dashboard en Next.js',
+    description: 'Proyecto intermedio con Next.js, TypeScript y Tailwind, donde se realizan consumos de APIs, persistencia de datos, manejo de estados, carga de imágenes y uso de Server Components.',
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript'],
     videoUrl: 'https://dashboard-items-git-main-wilson-s-projects.vercel.app/dashboard/pokemons',
     imageUrl: '/dashboard.png',
     repo: 'https://github.com/wilsoncap/dashboard-items'
   },
   {
     id: 6,
-    title: 'Gestion Contable',
-    description: 'Un sistema de gestión de contabilidad y recaudos multicompañia, está diseñado para ser multicompañía y con un sistema de roles que adapta dinámicamente los menús y accesos según el perfil de cada usuario, nota: repositorio privado',
-    technologies: ['Laravel', 'Inertia', 'Postgres', 'Vue.js'],
+    title: 'Gestión Contable',
+    description: 'Sistema de gestión contable y de recaudos multicompañía, con control de accesos mediante roles que adaptan dinámicamente los menús y accesos según el perfil del usuario. Nota: repositorio privado.',
+    technologies: ['Laravel', 'Inertia.js', 'PostgreSQL', 'Vue.js'],
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     imageUrl: '/contabilidad.png',
     repo: 'https://www.linkedin.com/posts/wilson-capacho-carmona-a593a1125_as%C3%AD-va-tomando-forma-mi-proyecto-personal-activity-7354201711273472000-aWGn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB7Y6qUBHRWtNVNsbdsQB4S1knAw_w33v4M'
   },
 ]);
+
 </script>
