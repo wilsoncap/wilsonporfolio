@@ -19,6 +19,6 @@
     </div>
   </section>
 
-  <h2>prueba deploy</h2>
+  <h2>prueba deploy 2</h2>
 
 </template>
