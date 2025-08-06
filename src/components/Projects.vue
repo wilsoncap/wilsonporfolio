@@ -59,7 +59,7 @@ const projects = ref([
     technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://jade-cascaron-a20bc0.netlify.app/',
     imageUrl: '/guitarra.png',
-    repo: 'https://github.com/wilsoncap/poke-proyect.git'
+    repo: 'https://github.com/wilsoncap/guitarra-vue'
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ const projects = ref([
     technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://effulgent-brioche-74f5b1.netlify.app/',
     imageUrl: '/cripto.png',
-    repo: 'https://github.com/wilsoncap/poke-proyect.git'
+    repo: 'https://github.com/wilsoncap/cripto-vue'
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ const projects = ref([
     technologies: ['Vue.js', 'Tailwind CSS', 'JavaScript'],
     videoUrl: 'https://moonlit-biscotti-bbb077.netlify.app/',
     imageUrl: '/veterinaria.png',
-    repo: 'https://github.com/wilsoncap/poke-proyect.git'
+    repo: 'https://github.com/wilsoncap/curso-paientes'
   },
   {
     id: 5,
@@ -93,9 +93,18 @@ const projects = ref([
     title: 'Gestión Contable',
     description: 'Sistema de gestión contable y de recaudos multicompañía, con control de accesos mediante roles que adaptan dinámicamente los menús y accesos según el perfil del usuario. Nota: repositorio privado.',
     technologies: ['Laravel', 'Inertia.js', 'PostgreSQL', 'Vue.js'],
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: '#',
     imageUrl: '/contabilidad.png',
     repo: 'https://www.linkedin.com/posts/wilson-capacho-carmona-a593a1125_as%C3%AD-va-tomando-forma-mi-proyecto-personal-activity-7354201711273472000-aWGn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB7Y6qUBHRWtNVNsbdsQB4S1knAw_w33v4M'
+  },
+  {
+    id: 7,
+    title: 'Gestión Presupuesto',
+    description: 'Sitio web para definir presupuesto, gestionar gastos y llevar un control de los recursos económicos, monitorear los egresos por rubros..',
+    technologies: ['Vue.js', 'JavaScript', 'Css3', 'Html',],
+    videoUrl: 'https://sunny-sopapillas-60871c.netlify.app/',
+    imageUrl: '/presupuesto.png',
+    repo: 'https://github.com/wilsoncap/admin-gastos'
   },
 ]);
 
