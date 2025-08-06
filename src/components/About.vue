@@ -19,60 +19,6 @@
     </div>
   </section>
 
-  <section class="px-4 md:px-0">
-  <div class="max-w-4xl mx-auto text-center space-y-10">
-    <h2 class="text-4xl font-extrabold text-purple-600">
-      Tecnologías conocidas 👨🏻‍💻
-    </h2>
-
-    <!-- Sección Frontend -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        🖥️ <span class="capitalize">Frontend</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,react,nextjs,pug,sass,tailwind,bootstrap,vuetify,materialui&theme" class="mx-auto" />
-    </div>
-
-    <!-- Sección Mobile -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        📱 <span class="capitalize">Mobile</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=dart,flutter&theme" class="mx-auto" />
-    </div>
-
-    <!-- Sección Backend -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        ⚙️ <span class="capitalize">Backend</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=php,nodejs,laravel,prisma&theme" class="mx-auto" />
-    </div>
-
-    <!-- Sección Bases de Datos -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        🗄️ <span class="capitalize">Bases de Datos</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,firebase&theme" class="mx-auto" />
-    </div>
-
-    <!-- Sección Herramientas -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        🧪 <span class="capitalize">Herramientas de Desarrollo</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=git,github,docker,postman,vscode,bash,notion,netlify&theme" class="mx-auto" />
-    </div>
-
-    <!-- Sección Diseño -->
-    <div class="space-y-2">
-      <h3 class="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-2">
-        🎨 <span class="capitalize">Diseño</span>
-      </h3>
-      <img src="https://skillicons.dev/icons?i=figma&theme" class="mx-auto" />
-    </div>
-  </div>
-  </section>
+  <h2>prueba deploy</h2>
 
 </template>
